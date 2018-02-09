@@ -564,7 +564,7 @@ figure {
   color: white;
 }
 
-img.demo {
+timeimg.demo {
   opacity: 0.6;
 }
 
@@ -573,7 +573,7 @@ img.demo {
   opacity: 1;
 }
 
-img.hover-shadow {
+timeimg.hover-shadow {
   transition: 0.3s
 }
 
@@ -586,7 +586,7 @@ img.hover-shadow {
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
-    position: relative;
+    position: absolute; 
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -604,7 +604,7 @@ img.hover-shadow {
 }
 
 /* Container around content */
-.container {
+.timecontainer {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
@@ -612,7 +612,7 @@ img.hover-shadow {
 }
 
 /* The circles on the timeline */
-.container::after {
+.timecontainer::after {
     content: '';
     position: absolute;
     width: 25px;
