@@ -27,7 +27,9 @@
 							<h1 id="title">IAMLOST Tracker</h1>
                             <br/>
                             
-							<p>Locate your loved ones are immediately</p>
+<h1>Locate your loved ones are immediately</h1>
+
+<p>We've kept this website as minimal as possible to make it easy to navigate in emergencies</p>
 						</div>
 
 					<!-- Nav -->
@@ -49,33 +51,11 @@
 								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-user">I AM LOST</span></a></li>
 								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-home">FIND MISSING PERSON</span></a></li>
 								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref">About IAMLOST Tracker</a></li>
-								<!--<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>-->
-<!--                                <li><a href="#resume" id="resume-link" class="skel-layers-ignoreHref"><a href="Sean%20Purtill's%20Resume.pdf">Resume</a></a></li>-->
-							</ul>
+                            </ul>
 						</nav>
 
 				</div>
 
-<!--
-				<div class="bottom">
-
-					 Social Icons 
-						<ul class="icons">
-							<li><a href="https://github.com/seantpurtill" class="icon fa-github"><span class="label">Github</span></a></li>
-                            
-                            <li><a href="https://www.linkedin.com/in/seanpurtill" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-							
-							<li>
-                                
-                                <a href="https://tree.taiga.io/project/seantpurtill-the-taiga-tango/" ><img src="taiga.png"></a></li>
-							
-                            <li><a href="mailto:seandoescode@gmail.com?Subject=Hello,%20Sean." target="_top" class="icon fa-envelope"><span class="label">Email</span></a></li>
-                            
-						</ul>
-
-				</div>
-
--->
 			</div>
 
 		<!-- Main -->
@@ -88,25 +68,25 @@
 							<header>
 								<h2 class="alt">Are you <strong>LOST?</strong>
                                 </h2>
+                            </header>
+                            
 								 <p>
                                      if you are lost or with someone who has a beeping IAMLOST tracker:
                                      <ol>
                                 <li> Remain Calm </li>
-                                <li> Check Tracker to see if your caretaker has alerted you</li>
-                                <li> Contact Police</li>
-                                <li></li>
+                                <li> Check Tracker to see if your caretaker has alerted you. If there is a blinking blue light, help is on the way</li>
+                                <li> Contact the number on the back.<br/></li>
+                                <li> Contact Police if possible.<BR/></li>
+                                         
+                                <li>DO NOT LEAVE WHERE YOU ARE, UNLESS IT IS UNSAFE<br/>  </li>
+                                <li>DO NOT LEAVE WITH A STRANGER</li>
                                 
                                 
                                 
                                 </ol>
                                 
-                             </p>
-							</header>
-
-							<footer>
-<!--								<a href="#portfolio" class="button scrolly">Find out more</a>-->
-							</footer>
-
+                                </p>
+							
 						</div>
 					</section>
 
@@ -120,11 +100,22 @@
 							</header>
                             							
 								 <p>
-                                     If you are a caretaker of someone with a IAMLOST Tracker, :
+                                     If you are a caretaker of someone with a IAMLOST Tracker, and they have alerted you that they are lost:
                                      <ol>
-                                <li> Remain Calm </li>
-                                <li> Check Tracker to see if your caretaker has alerted you</li>
-                                <li> Contact Police</li>
+                                           <form action="https://api.particle.io/v1/devices/530040000f51353433323633/led?access_token=702d1b10cf9d2318416ac3a54bc1eec5e157dbdd" method="POST">
+    
+    <input type="radio" name="arg" value="on">Turn Alert on.
+    <br>
+    <input type="radio" name="arg" value="off">Turn Alert off.
+    <br/>
+    <br>
+    <input type="submit" value="Send Command to Tracker!">
+  </form>
+<br/>
+                                         
+                             <li>Alert the tracker that you are coming to find them, by selecting the command above.</li>
+                             <li>Return to the last place you were together.<br/></li>
+                             <li>IF you cannot find your loved one, Contact Police.</li>
                                 <li></li>
                                 
                                 
@@ -142,30 +133,25 @@
 						<div class="container">
 
 							<header>
-								<h2>About the IAMLOST Tracker<br/>
-                                
-                            </h2>
+								<h2>About the IAMLOST Tracker</h2>
 							</header>
                             							
-								 <p>
-                                The IAMLOST Tracker is designed to help caregivers find their loved one.
+								 <ol>
+<li>The IAMLOST Tracker is designed to help caregivers find their loved one.<br/></li>
                                      
-                                The Tracker is built into a small ???? that is connected to the TELUS network, and allows caregivers to send alerts to the tracker, and allow their ward to let the caregiver know when they are lost.
                                      
-                                How it works:
-                                
-                                If the IAMLOST tracker is pressed five times:
-                                     - An alert is sent to the caretaker.
-                                
-                                
-                                
+
+                                     <li>The Tracker is built into a small communicator that is connected to the TELUS network, and allows caregivers to send alerts to the tracker, and allow their ward to let the caregiver know when they are lost.<br/></li>
+        
+                                     <li>
+                                    <br/>
+        If the IAMLOST tracker is pressed five times:<br/><br/>
+             1. An alert is sent to the caretaker.<br/><br/>
+             2. The Caregiver can then message back that they are on the way. <br/><br/>
+             3. The tracker will then beep, and the owner may need to stay in place and so his or her caregiver find them. This also makes it easier for the police to locate the missing person if necessary. <br/>
+                                     </li>
                                 
                                 </ol>
-
-
-							
-
-
 
 						</div>
 					</section>
@@ -173,42 +159,15 @@
                 
                 
 				<!-- Contact -->
-					<!--<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Contact</h2>
-							</header>
-
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
-
-							<form method="post" action="#">
-								<div class="row">
-									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="12u$">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="12u$">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
-
-						</div>
-					</section>
-
-			</div>
+					
+			
 -->
 		<!-- Footer -->
 			<div id="footer">
 
 				<!-- Copyright -->
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Calgary Hack: 2018 </li><li>Team: <a href="http://html5up.net">Hire Us April 16th</a></li>
 					</ul>
 
 			</div>
