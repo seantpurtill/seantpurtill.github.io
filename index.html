@@ -13,6 +13,84 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <style>
+        
+/* Shared for all accordion types */
+.accordion {
+    
+    margin:0 auto;
+    font-size:14px;
+    border:1px solid #542437;
+    border-radius:10px;
+    width:900px;
+    padding:10px;
+    background:#fff;
+}
+.accordion ul {
+    list-style:none;
+    margin:0;
+    padding:0;    
+}
+.accordion li {
+    margin:0;
+    padding:0;
+}
+.accordion [type=radio], .accordion [type=checkbox] {
+    display:none;
+}
+.accordion label {
+    display:block;
+    font-size:16px;
+    line-height:16px;
+    background:#808080;
+    border:1px solid #542437;
+    color:#fff;
+    text-shadow:1px 1px 1px rgba(255,255,255,0.3);
+    font-weight:700;
+    cursor:pointer;
+    text-transform:uppercase;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+}
+.accordion ul li label:hover, .accordion [type=radio]:checked ~ label, .accordion [type=checkbox]:checked ~ label {
+    background:#8083a7;
+    color:#FFF;
+    text-shadow:1px 1px 1px rgba(0,0,0,0.5)
+}
+.accordion .content {
+    padding:0 10px;
+    overflow:hidden;
+    border:1px solid #fff; /* Make the border match the background so it fades in nicely */
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+}
+
+}
+
+
+/* Vertical */
+.vertical ul li {
+    overflow:hidden;
+    margin:0 0 1px;
+}
+.vertical ul li label {
+    padding:10px;
+}
+.vertical [type=radio]:checked ~ label, .vertical [type=checkbox]:checked ~ label {
+    border-bottom:0;
+}
+.vertical ul li label:hover {
+    border:1px solid #542437; /* We don't want the border to disappear on hover */
+}
+.vertical ul li .content {
+    height:0px;
+    border-top:0;
+}
+.vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
+    height:300px;
+    border:1px solid #542437;
+}        
+        </style>
 	</head>
 	<body>
 
@@ -162,82 +240,64 @@
 						<div class="container">
 
 							<header>
-								<h2>Experience<br/>
-                                Section in Progress.
+								<h2>Experience
                             </h2>
+                                <p> click on a title tab to see where i've been these few years.</p>
 							</header>
 
 							<a href="#" class="image featured"><img src="" alt="" /></a>
 
-							<!-- Tab links -->
-<!--<button onclick="myFunction()">Winsport - Event Manager</button>-->
-
-<!--
-<div id="myDIV">
-   <p>Managed thousands of event set ups and tear downs, lead a team of 5 
-          Click here to read more about this role
-          
-         Hidden: ~ As Set up Team Lead, I coordinated the on-site logistics with the Specia
-Events department for small corporate events to 3000+ guest festivals.
-~ Drawing on my 10+ years of experience in the hospitality industry, this
-challenging role is a combination of customer service, operations
-management, project management and supervising teams of ranging from 3
-to 20 staff
-~ Transitioned 3 on-site restaurant facilities from using disposable cloths to
-kitchen cloths washable in-house, saving 90% in costs, and vastly reducing
-unnecessary waste
-~ Designing an intricately welded frame for moving chairs increasing work
-speed by 300%, particularly useful during time-critical events </p>
+   <div class="accordion vertical">
+    <ul>
+        <li>
+            <input type="radio" id="radio-1" name="radio-accordion" checked="checked" />
+            <label for="radio-1">Winsport, Calgary Alberta, 2014-2017 </label>
+            <div class="content">
+                <h2>Event Manager - Setups</h2>
+                  <h3>
+          ~ As Set up Team Lead, I coordinated the on-site logistics with the Specia
+          Events department for small corporate events to 3000+ guest festivals.
+          ~ Drawing on my 10+ years of experience in the hospitality industry, this
+          challenging role is a combination of customer service, operations
+          management, project management and supervising teams of ranging from 3
+          to 20 staff
+          ~ Transitioned 3 on-site restaurant facilities from using disposable cloths to
+          kitchen cloths washable in-house, saving 90% in costs, and vastly reducing
+          unnecessary waste
+          ~ Designing an intricately welded frame for moving chairs increasing work
+          speed by 300%, particularly useful during time-critical events 
+                  </h3>                
+            </div>
+        </li>
+        <li>
+            <input type="radio" id="radio-2" name="radio-accordion" />
+            <label for="radio-2">Good Shepherd Eye Clinic, Swaziland - Africa, 2013</label>
+            <div class="content">
+                <h2>Project Coordinator</h2>
+                <h3>
+                
+                ~ Worked the medical and clerical staff to modernize the administrative side of the of the clinic operations, focusing on patient data management, procurement, inventory management, and administrative accounting
+~ Coordinated the launch of a patient database in three rural African clinics, including government hospitals, across Swaziland, which transitioned handwritten medical records to electronic records
+                
+                </h3>
+            </div>
+        </li>
+        <li>
+            <input type="radio" id="radio-3" name="radio-accordion" />
+            <label for="radio-3">Bell, Mississauga - Ontario, 2012-2013</label>
+            <div class="content">
+                <h2>Project Management Internship</h2>
+            
+            <h3>
+             ~ As an intern in the project management office, I focused on improving the internship program while meeting goals set for our department. This was achieved through document management, vendor relations, communication system development, and inventory management
+            </h3>
+                
+            </div>
+        </li>
+       
+    </ul>
 </div>
--->
-
-<div id="accordion">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h5 class="mb-0">
-        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Collapsible Group Item #1
-        </button>
-      </h5>
-    </div>
-
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Collapsible Group Item #2
-        </button>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
-        </button>
-      </h5>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-</div>
--->
-
+    
 						</div>
 					</section>
 
