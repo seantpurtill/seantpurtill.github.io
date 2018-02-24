@@ -2095,7 +2095,7 @@
 					color: #41484c;
 					text-align: center;
 					width: 1.25em;
-					line-height: 1.75em;
+					line-height: 1.35em;
 				}
 
 			#nav ul li a.active {
@@ -2177,7 +2177,7 @@
 					}
 
 			#main > section.cover {
-				padding: 6em 0;
+				padding: 5em 0;
 				background-size: cover;
 				background-position: center center;
 			}
@@ -2192,7 +2192,8 @@
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
+/*				background-color: #ecf1f1;*/
+                background-image: url("../../images/pic03.jpg");
 			}
 
 			#main > section.four {
