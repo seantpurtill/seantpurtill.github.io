@@ -2189,10 +2189,17 @@
 
 			#main > section.two {
 				background-color: #f5fafa;
+                background-image: url("../../images/softwhite.jpeg");
+                background-size: cover;
+				background-position: center center;
+                
 			}
 
 			#main > section.three {
 				background-color: #d4d4d4;
+                background-image: url("../../images/soft_grey.jpeg");
+                background-size: cover;
+				background-position: center center;
                 
 			}
 
