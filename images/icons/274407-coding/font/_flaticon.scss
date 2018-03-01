@@ -1,0 +1,119 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 25/11/2016 10:43
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-binary-code:before { content: "\f100"; }
+.flaticon-binary-code-1:before { content: "\f101"; }
+.flaticon-browser:before { content: "\f102"; }
+.flaticon-browser-1:before { content: "\f103"; }
+.flaticon-browser-2:before { content: "\f104"; }
+.flaticon-bug:before { content: "\f105"; }
+.flaticon-bug-1:before { content: "\f106"; }
+.flaticon-coding:before { content: "\f107"; }
+.flaticon-coding-1:before { content: "\f108"; }
+.flaticon-coding-2:before { content: "\f109"; }
+.flaticon-computer:before { content: "\f10a"; }
+.flaticon-css:before { content: "\f10b"; }
+.flaticon-css-1:before { content: "\f10c"; }
+.flaticon-css-2:before { content: "\f10d"; }
+.flaticon-database:before { content: "\f10e"; }
+.flaticon-file:before { content: "\f10f"; }
+.flaticon-file-1:before { content: "\f110"; }
+.flaticon-firewall:before { content: "\f111"; }
+.flaticon-html:before { content: "\f112"; }
+.flaticon-html-1:before { content: "\f113"; }
+.flaticon-html-2:before { content: "\f114"; }
+.flaticon-http:before { content: "\f115"; }
+.flaticon-http-1:before { content: "\f116"; }
+.flaticon-java:before { content: "\f117"; }
+.flaticon-java-1:before { content: "\f118"; }
+.flaticon-java-2:before { content: "\f119"; }
+.flaticon-jsx:before { content: "\f11a"; }
+.flaticon-jsx-1:before { content: "\f11b"; }
+.flaticon-mysql:before { content: "\f11c"; }
+.flaticon-mysql-1:before { content: "\f11d"; }
+.flaticon-mysql-2:before { content: "\f11e"; }
+.flaticon-php:before { content: "\f11f"; }
+.flaticon-php-1:before { content: "\f120"; }
+.flaticon-plug:before { content: "\f121"; }
+.flaticon-puzzle:before { content: "\f122"; }
+.flaticon-search:before { content: "\f123"; }
+.flaticon-theme:before { content: "\f124"; }
+.flaticon-www:before { content: "\f125"; }
+.flaticon-xml:before { content: "\f126"; }
+.flaticon-xml-1:before { content: "\f127"; }
+    
+    $font-Flaticon-binary-code: "\f100";
+    $font-Flaticon-binary-code-1: "\f101";
+    $font-Flaticon-browser: "\f102";
+    $font-Flaticon-browser-1: "\f103";
+    $font-Flaticon-browser-2: "\f104";
+    $font-Flaticon-bug: "\f105";
+    $font-Flaticon-bug-1: "\f106";
+    $font-Flaticon-coding: "\f107";
+    $font-Flaticon-coding-1: "\f108";
+    $font-Flaticon-coding-2: "\f109";
+    $font-Flaticon-computer: "\f10a";
+    $font-Flaticon-css: "\f10b";
+    $font-Flaticon-css-1: "\f10c";
+    $font-Flaticon-css-2: "\f10d";
+    $font-Flaticon-database: "\f10e";
+    $font-Flaticon-file: "\f10f";
+    $font-Flaticon-file-1: "\f110";
+    $font-Flaticon-firewall: "\f111";
+    $font-Flaticon-html: "\f112";
+    $font-Flaticon-html-1: "\f113";
+    $font-Flaticon-html-2: "\f114";
+    $font-Flaticon-http: "\f115";
+    $font-Flaticon-http-1: "\f116";
+    $font-Flaticon-java: "\f117";
+    $font-Flaticon-java-1: "\f118";
+    $font-Flaticon-java-2: "\f119";
+    $font-Flaticon-jsx: "\f11a";
+    $font-Flaticon-jsx-1: "\f11b";
+    $font-Flaticon-mysql: "\f11c";
+    $font-Flaticon-mysql-1: "\f11d";
+    $font-Flaticon-mysql-2: "\f11e";
+    $font-Flaticon-php: "\f11f";
+    $font-Flaticon-php-1: "\f120";
+    $font-Flaticon-plug: "\f121";
+    $font-Flaticon-puzzle: "\f122";
+    $font-Flaticon-search: "\f123";
+    $font-Flaticon-theme: "\f124";
+    $font-Flaticon-www: "\f125";
+    $font-Flaticon-xml: "\f126";
+    $font-Flaticon-xml-1: "\f127";
