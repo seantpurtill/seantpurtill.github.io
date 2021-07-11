@@ -5,110 +5,132 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Sean Purtill</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-        <style>
-        
-/* Shared for all accordion types */
-.accordion {
-    
-    margin:0 auto;
-    font-size:14px;
-    border:1px solid #542437;
-    border-radius:10px;
-    width:900px;
-    padding:10px;
-    background:#fff;
-}
-.accordion ul {
-    list-style:none;
-    margin:0;
-    padding:0;    
-}
-.accordion li {
-    margin:0;
-    padding:0;
-}
-.accordion [type=radio], .accordion [type=checkbox] {
-    display:none;
-}
-.accordion label {
-    display:block;
-    font-size:16px;
-    line-height:16px;
-    background-image:url(images/pic04.jpg);
-    border:1px solid #542437;
-    color:#fff;
-    text-shadow:1px 1px 1px rgba(255,255,255,0.3);
-    font-weight:700;
-    cursor:pointer;
-    text-transform:uppercase;
-    -webkit-transition: all .2s ease-out;
-    -moz-transition: all .2s ease-out;
-}
-.accordion ul li label:hover, .accordion [type=radio]:checked ~ label, .accordion [type=checkbox]:checked ~ label {
-    background-image: url(images/banner.jpg);
-    color:#FFF;
-    text-shadow:1px 1px 1px rgba(0,0,0,0.5)
-}
-.accordion .content {
-    padding:0 10px;
-    overflow:hidden;
-    border:1px solid #fff; /* Make the border match the background so it fades in nicely */
-    -webkit-transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-}
 
-}
+<head>
+	<title>Sean Purtill</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 
 
-/* Vertical */
-.vertical ul li {
-    overflow:hidden;
-    margin:0 0 1px;
-}
-.vertical ul li label {
-    padding:10px;
-}
-.vertical [type=radio]:checked ~ label, .vertical [type=checkbox]:checked ~ label {
-    border-bottom:0;
-}
-.vertical ul li label:hover {
-    border:1px solid black; /* We don't want the border to disappear on hover */
-}
-.vertical ul li .content {
-    height:0px;
-    border-top:0;
-}
-.vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
-    height:300px;
-    border:1px solid black;
-}        
-        </style>
-	</head>
-	<body>
 
-		<!-- Header -->
-			<div id="header">
+	<style>
+		/* Shared for all accordion types */
+		.accordion {
 
-				<div class="top">
+			margin: 0 auto;
+			font-size: 14px;
+			border: 1px solid #542437;
+			border-radius: 10px;
+			width: 900px;
+			padding: 10px;
+			background: #fff;
+		}
 
-					<!-- Logo -->
-						<div id="logo">
-							<img src="images/smaller%20headshot_edited.jpg" alt="Headshot" />
-							<h1 id="title">Sean Purtill</h1>
-							<p>Software Developer</p>
-						</div>
+		.accordion ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
 
-					<!-- Nav -->
-						<nav id="nav">
-							<!--
+		.accordion li {
+			margin: 0;
+			padding: 0;
+		}
+
+		.accordion [type=radio],
+		.accordion [type=checkbox] {
+			display: none;
+		}
+
+		.accordion label {
+			display: block;
+			font-size: 16px;
+			line-height: 16px;
+			background-image: url(images/pic04.jpg);
+			border: 1px solid #542437;
+			color: #fff;
+			text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+			font-weight: 700;
+			cursor: pointer;
+			text-transform: uppercase;
+			-webkit-transition: all .2s ease-out;
+			-moz-transition: all .2s ease-out;
+		}
+
+		.accordion ul li label:hover,
+		.accordion [type=radio]:checked~label,
+		.accordion [type=checkbox]:checked~label {
+			background-image: url(images/banner.jpg);
+			color: #FFF;
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5)
+		}
+
+		.accordion .content {
+			padding: 0 10px;
+			overflow: hidden;
+			border: 1px solid #fff;
+			/* Make the border match the background so it fades in nicely */
+			-webkit-transition: all .5s ease-out;
+			-moz-transition: all .5s ease-out;
+		}
+
+		}
+
+
+		/* Vertical */
+		.vertical ul li {
+			overflow: hidden;
+			margin: 0 0 1px;
+		}
+
+		.vertical ul li label {
+			padding: 10px;
+		}
+
+		.vertical [type=radio]:checked~label,
+		.vertical [type=checkbox]:checked~label {
+			border-bottom: 0;
+		}
+
+		.vertical ul li label:hover {
+			border: 1px solid black;
+			/* We don't want the border to disappear on hover */
+		}
+
+		.vertical ul li .content {
+			height: 0px;
+			border-top: 0;
+		}
+
+		.vertical [type=radio]:checked~label~.content,
+		.vertical [type=checkbox]:checked~label~.content {
+			height: 300px;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Header -->
+	<div id="header">
+
+		<div class="top">
+
+			<!-- Logo -->
+			<div id="logo">
+				<img src="images/smaller%20headshot_edited.jpg" alt="Headshot" />
+				<h1 id="title">Sean Purtill</h1>
+				<p>Software Developer</p>
+			</div>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<!--
 
 								Prologue's nav expects links in one of two formats:
 
@@ -121,225 +143,305 @@
 								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
 
 							-->
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Achievements</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Experience</span></a></li>
-								<!--<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>-->
-                                <li><p><a href="#resume" id="resume-link" class="skel-layers-ignoreHref">
-									<a href="/Portfolio/Cover_Letter_and_Resume.pdf" download>Resume and Cover Letter</a></a><p></li>
-							</ul>
-						</nav>
+				<ul>
+					<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span
+								class="icon fa-home">Intro</span></a></li>
+					<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span
+								class="icon fa-th">Achievements</span></a></li>
+					<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span
+								class="icon fa-user">Experience</span></a></li>
+					<!--<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>-->
+					<li>
+						<p><a href="#resume" id="resume-link" class="skel-layers-ignoreHref">
+								<a href="/Portfolio/Cover_Letter_and_Resume.pdf" download>Resume and Cover
+									Letter</a></a>
+							<p>
+					</li>
+				</ul>
+			</nav>
 
-				</div>
+		</div>
 
-				<div class="bottom">
+		<div class="bottom">
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://github.com/seantpurtill" class="icon fa-github"><span class="label">Github</span></a></li>
-                            
-                            <li><a href="https://www.linkedin.com/in/seanpurtill" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-							
-							<li><a href="https://tree.taiga.io/project/seantpurtill-the-taiga-tango/" ><img src="taiga.png"></a></li>
-							
-                            <li><a href="mailto:seandoescode@gmail.com?Subject=Hello,%20Sean." target="_top" class="icon fa-envelope"><span class="label">Email</span></a></li>
-                            
-						</ul>
+			<!-- Social Icons -->
+			<ul class="icons">
+				<li><a href="https://github.com/seantpurtill" class="icon fa-github"><span
+							class="label">Github</span></a></li>
 
-				</div>
+				<li><a href="https://www.linkedin.com/in/seanpurtill" class="icon fa-linkedin"><span
+							class="label">Linkedin</span></a></li>
+
+				<li><a href="https://tree.taiga.io/project/seantpurtill-the-taiga-tango/"><img src="taiga.png"></a></li>
+
+				<li><a href="mailto:seandoescode@gmail.com?Subject=Hello,%20Sean." target="_top"
+						class="icon fa-envelope"><span class="label">Email</span></a></li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+	<!-- Main -->
+	<div id="main">
+
+		<!-- Intro -->
+		<section id="top" class="one dark cover">
+			<div class="container">
+
+				<header>
+					<h2 class="alt">Hi! I'm your new friend, <strong>Sean.</strong>
+
+					</h2>
+					<p class="alt location" id="location">Location</p>
+					<script>
+						
+
+						var x = document.body.children[1].children[0].children[0].children[0].children[1];
+						function getLocation() {
+							if (navigator.geolocation) {
+								navigator.geolocation.getCurrentPosition(showPosition);
+							} else {
+								x.innerHTML = "Geolocation is not supported by this browser.";
+							}
+						}
+
+						function showPosition(position) {
+							x.innerHTML = "Latitude: " + position.coords.latitude +
+								" <br>Longitude: " + position.coords.longitude;
+							var lat = position.coords.latitude;
+							var lon = position.coords.longitude;
+							var userLocation = lat + ', ' + lon;
+							//Latitude: 51.134463999999994
+							//Longitude: -114.081792
+							debugger
+							if (lat <= lat + 0.0000009 && lat >= lat - 0.0000009) {
+								debugger
+								var yourLocation = "Latitude: " + position.coords.latitude +
+								" <br>Longitude: " + position.coords.longitude + "......";
+
+								yourLocation += 'You are nearby Sculpture X';
+								x.innerHTML = yourLocation;
+							}
+
+
+
+
+
+
+						}
+						getLocation();
+					</script>
+					<p>I'm new to the Software scene in Calgary. I'm always up to meeting new people and sharing new
+						experiences; you can regularly find me at many tech meetups
+
+						I'm looking for work in Calgary. This portfolio is in development; I would rather have my
+						MVP(minimum viable product) up and running than waiting until after I get a job before
+						publishing. Thanks for visiting and feel free to leave advice, and let's not beat around the
+						bush: ask me for an interview!
+
+						<br /><br /><br />
+					</p>
+					<img src="images/icons/274407-coding/png/css-2.png">&emsp;
+					<img src="images/icons/274407-coding/png/html-1.png">&emsp;
+					<img src="images/icons/274407-coding/png/mysql-2.png">&emsp;
+					<img src="images/icons/274407-coding/png/java-2.png">&emsp;
+					<img src="images/icons/274407-coding/png/java-1.png">&emsp;
+					<img src="images/icons/274407-coding/png/php-1.png">
+
+
+
+				</header>
+
+				<footer>
+					<!--								<a href="#portfolio" class="button scrolly">Find out more</a>-->
+				</footer>
 
 			</div>
+		</section>
 
-		<!-- Main -->
-			<div id="main">
+		<!-- Portfolio -->
+		<section id="portfolio" class="two">
+			<div class="container">
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
+				<header>
+					<h2>Achievements</h2>
+				</header>
 
+				<p>Here are some of the projects I have been working on, in school and from home. I've also included a
+					few non-coding achievements from the few couple years as conversational pieces. View the code on
+					github.
+
+				</p>
+
+				<div class="row">
+					<div class="4u 12u$(mobile)">
+						<article class="item">
+							<a href="https://github.com/seantpurtill/Travel-Experts-Desktop-Application"
+								class="image fit"><img src="Portfolio/Desktop.PNG" alt="" />
+								<header>
+									<h3>Travel Experts Desktop Application</h3>
+								</header>
+							</a>
+						</article>
+						<article class="item">
+							<a href="https://github.com/seantpurtill/Travel-Experts-Registration" class="image fit"><img
+									src="Portfolio/asp.net_registration.JPG" alt="" /></a>
 							<header>
-								<h2 class="alt">Hi! I'm your new friend, <strong>Sean.</strong>
-                                </h2>
-								 <p>I'm new to the Software scene in Calgary. I'm always up to meeting new people and sharing new experiences; you can regularly find me at many tech meetups  
-									 
-									I'm looking for work in Calgary. This portfolio is in development; I would rather have my MVP(minimum viable product) up and running than waiting until after I get a job before publishing. Thanks for visiting and feel free to leave advice, and let's not beat around the bush: ask me for an interview! 
-
-                                <br/><br/><br/>     
-                                </p>
-                <img src="images/icons/274407-coding/png/css-2.png">&emsp;
-                    <img src="images/icons/274407-coding/png/html-1.png">&emsp;
-                    <img src="images/icons/274407-coding/png/mysql-2.png">&emsp;
-                    <img src="images/icons/274407-coding/png/java-2.png">&emsp;
-                    <img src="images/icons/274407-coding/png/java-1.png">&emsp;
-                    <img src="images/icons/274407-coding/png/php-1.png">
-
-                                
-                            
-                            </header>
-
-							<footer>
-<!--								<a href="#portfolio" class="button scrolly">Find out more</a>-->
-							</footer>
-
-						</div>
-					</section>
-
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-
-							<header>
-								<h2>Achievements</h2>
+								<h3>Travel Experts Registration</h3>
 							</header>
-
-							<p>Here are some of the projects I have been working on, in school and from home. I've also included a few non-coding achievements from the few couple years as conversational pieces. View the code on github.
-                            
-                            </p>
-
-							<div class="row">
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="https://github.com/seantpurtill/Travel-Experts-Desktop-Application" class="image fit"><img src="Portfolio/Desktop.PNG" alt="" />
-										<header>
-											<h3>Travel Experts Desktop Application</h3>
-                                            </header></a>
-									</article>
-									<article class="item">
-										<a href="https://github.com/seantpurtill/Travel-Experts-Registration" class="image fit"><img src="Portfolio/asp.net_registration.JPG" alt="" /></a>
-										<header>
-											<h3>Travel Experts Registration</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pins.jpg" alt="" /></a>
-										<header>
-											<h3>Wine Sommelier Certification (and WSET2 and WSET3) </h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="https://github.com/seantpurtill/Travel-Experts-Registration" class="image fit"><img src="Portfolio/asp.net_login.JPG" alt="" /></a>
-										<header>
-											<h3>Travel Experts Client Website</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pig06.jpg" alt="" /></a>
-										<header>
-											<h3>Pig Latin Translator</h3>
-										</header>
-									</article>
-
-									
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/Beekeeping.JPG" alt="" /></a>
-										<header>
-											<h3>Beekeeping Certification </h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u$ 12u$(mobile)">
-								
-									<article class="item">
-										<a href="#" class="image fit"><img src="Portfolio/hackathon.jpg" alt="" /></a>
-										<header>
-											<h3>Calgary Hackathon 2018</h3>
-										</header>
-									</article>
-								
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pi-radio.jpg" alt="" /></a>
-										<header>
-											<h3>Raspberry Pi(rate) Radio</h3>
-										</header>
-									</article>
-								
-							
-								</div>
-						</div>
-				</section>
-
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
-
+						</article>
+						<article class="item">
+							<a href="#" class="image fit"><img src="images/pins.jpg" alt="" /></a>
 							<header>
-								<h2>Experience
-                            </h2>
-                                <p> Click on a location below to see where I've been these few years. </p>
+								<h3>Wine Sommelier Certification (and WSET2 and WSET3) </h3>
 							</header>
+						</article>
+					</div>
+					<div class="4u 12u$(mobile)">
+						<article class="item">
+							<a href="https://github.com/seantpurtill/Travel-Experts-Registration" class="image fit"><img
+									src="Portfolio/asp.net_login.JPG" alt="" /></a>
+							<header>
+								<h3>Travel Experts Client Website</h3>
+							</header>
+						</article>
+						<article class="item">
+							<a href="#" class="image fit"><img src="images/pig06.jpg" alt="" /></a>
+							<header>
+								<h3>Pig Latin Translator</h3>
+							</header>
+						</article>
 
-							<a href="#" class="image featured"><img src="" alt="" /></a>
-<div class="10u$ 12u$(mobile)">
-   <div class="accordion vertical">
-    <ul>
-		
-        <li>
-            <input type="radio" id="radio-1" name="radio-accordion" checked="checked" />
-            <label for="radio-1">Alberta Health Services, Calgary - Alberta, May 2018- September 2018 </label>
-            <div class="content">
-                <h2>Work Experience Intern</h2>
-                  <h3>
-					<br/>	•	While working in Rural Clinical Services, I learnt to deliver quality projects for various agile departments, across the province using team virtualization tools. 
-					<br/>	•	Created an internal web application for physicians in Medicine Hat to report on current patients under their care, referencing multiple databases. After discussing requirements with the clients, I developed an application to report on active physicians, current patients, associated medical records, and room location within a 15-minute accuracy. The application as tested by a closed control group of physicians, and is now in operation, replacing discontinued industry software
-<!--					<br/>	•	Developed and documented procedures for converting millions of confidential client records from multiple sources into a comprehensive database. Each component of the workflow was detailed, scalable, and easily replicable by future database administrators
--->					
-                  </h3>                
-            </div>
-        </li>
-		<li>
-				<input type="radio" id="radio-2" name="radio-accordion"  />
-				<label for="radio-2">Winsport, Calgary - Alberta, 2014-2017 </label>
-				<div class="content">
-					<h2>Event Manager - Setup Team Lead</h2>
-					  <h3>
-						<br/>	•	As Set Up Team Lead, I coordinated the on-site logistics with the Events department for small corporate events to 3000+ guest festivals
-						<br/>	•	This challenging role was a combination of customer service, operations management, project planning and supervising teams ranging from 3 to 20 staff
-						<br/>	•	Transitioned 3 on-site restaurant facilities from using disposable cloths to kitchen cloths washable in-house, saving 90% in costs, and vastly reducing unnecessary waste
-							
-					  </h3>                
+
+						<article class="item">
+							<a href="#" class="image fit"><img src="images/Beekeeping.JPG" alt="" /></a>
+							<header>
+								<h3>Beekeeping Certification </h3>
+							</header>
+						</article>
+					</div>
+					<div class="4u$ 12u$(mobile)">
+
+						<article class="item">
+							<a href="#" class="image fit"><img src="Portfolio/hackathon.jpg" alt="" /></a>
+							<header>
+								<h3>Calgary Hackathon 2018</h3>
+							</header>
+						</article>
+
+						<article class="item">
+							<a href="#" class="image fit"><img src="images/pi-radio.jpg" alt="" /></a>
+							<header>
+								<h3>Raspberry Pi(rate) Radio</h3>
+							</header>
+						</article>
+
+
+					</div>
 				</div>
-			</li>
-			
-		<li>
-            <input type="radio" id="radio-3" name="radio-accordion" />
-            <label for="radio-3">Good Shepherd Eye Clinic, Swaziland - Africa, 2013</label>
-            <div class="content">
-                <h2>Project Coordinator</h2>
-                <h3>
-					<br/>	•	Worked with the medical and clerical staff to modernize the administrative side of the clinic operations, focusing on patient data management, it support, and software training
-					<br/>	•	Coordinated the launch of a patient database in three rural African clinics across Swaziland’s national hospitals, which transitioned from handwritten records to electronic patient records
-						
-                </h3>
-            </div>
-        </li>
-        <li>
-            <input type="radio" id="radio-4" name="radio-accordion" />
-            <label for="radio-4">Bell, Mississauga - Ontario, 2012-2013</label>
-            <div class="content">
-                <h2>Project Management Internship</h2>
-            
-            <h3>
-				<br/>	• As an intern in the project management office, I focused on improving the internship program while meeting goals set for our department. This was achieved through document management, vendor relations, communication system development, and inventory management
-            </h3>
-                
-            </div>
-        </li>
-       
-    </ul>
-</div>
-                            </div>
-						</div>
-					</section>
+		</section>
 
-                
-                
-			
+		<!-- About Me -->
+		<section id="about" class="three">
+			<div class="container">
+
+				<header>
+					<h2>Experience
+					</h2>
+					<p> Click on a location below to see where I've been these few years. </p>
+				</header>
+
+				<a href="#" class="image featured"><img src="" alt="" /></a>
+				<div class="10u$ 12u$(mobile)">
+					<div class="accordion vertical">
+						<ul>
+
+							<li>
+								<input type="radio" id="radio-1" name="radio-accordion" checked="checked" />
+								<label for="radio-1">Alberta Health Services, Calgary - Alberta, May 2018- September
+									2018 </label>
+								<div class="content">
+									<h2>Work Experience Intern</h2>
+									<h3>
+										<br /> • While working in Rural Clinical Services, I learnt to deliver quality
+										projects for various agile departments, across the province using team
+										virtualization tools.
+										<br /> • Created an internal web application for physicians in Medicine Hat to
+										report on current patients under their care, referencing multiple databases.
+										After discussing requirements with the clients, I developed an application to
+										report on active physicians, current patients, associated medical records, and
+										room location within a 15-minute accuracy. The application as tested by a closed
+										control group of physicians, and is now in operation, replacing discontinued
+										industry software
+										<!--					<br/>	•	Developed and documented procedures for converting millions of confidential client records from multiple sources into a comprehensive database. Each component of the workflow was detailed, scalable, and easily replicable by future database administrators
 -->
+									</h3>
+								</div>
+							</li>
+							<li>
+								<input type="radio" id="radio-2" name="radio-accordion" />
+								<label for="radio-2">Winsport, Calgary - Alberta, 2014-2017 </label>
+								<div class="content">
+									<h2>Event Manager - Setup Team Lead</h2>
+									<h3>
+										<br /> • As Set Up Team Lead, I coordinated the on-site logistics with the
+										Events department for small corporate events to 3000+ guest festivals
+										<br /> • This challenging role was a combination of customer service, operations
+										management, project planning and supervising teams ranging from 3 to 20 staff
+										<br /> • Transitioned 3 on-site restaurant facilities from using disposable
+										cloths to kitchen cloths washable in-house, saving 90% in costs, and vastly
+										reducing unnecessary waste
+
+									</h3>
+								</div>
+							</li>
+
+							<li>
+								<input type="radio" id="radio-3" name="radio-accordion" />
+								<label for="radio-3">Good Shepherd Eye Clinic, Swaziland - Africa, 2013</label>
+								<div class="content">
+									<h2>Project Coordinator</h2>
+									<h3>
+										<br /> • Worked with the medical and clerical staff to modernize the
+										administrative side of the clinic operations, focusing on patient data
+										management, it support, and software training
+										<br /> • Coordinated the launch of a patient database in three rural African
+										clinics across Swaziland’s national hospitals, which transitioned from
+										handwritten records to electronic patient records
+
+									</h3>
+								</div>
+							</li>
+							<li>
+								<input type="radio" id="radio-4" name="radio-accordion" />
+								<label for="radio-4">Bell, Mississauga - Ontario, 2012-2013</label>
+								<div class="content">
+									<h2>Project Management Internship</h2>
+
+									<h3>
+										<br /> • As an intern in the project management office, I focused on improving
+										the internship program while meeting goals set for our department. This was
+										achieved through document management, vendor relations, communication system
+										development, and inventory management
+									</h3>
+
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+		-->
 		<!-- Footer -->
-<!--
+		<!--
 			<div id="footer">
 
 				 Copyright 
@@ -351,13 +453,14 @@
 -->
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollzer.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
 
-	</body>
+</body>
+
 </html>
