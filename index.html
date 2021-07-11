@@ -221,7 +221,8 @@
 								var yourLocation = "Latitude: " + position.coords.latitude +
 								" <br>Longitude: " + position.coords.longitude + "......";
 
-								yourLocation += 'You are nearby Sculpture X';
+								yourLocation += 'You are nearby Sculpture ' + navigator.permissions.query({name:'geolocation'}).toString()
+;
 								x.innerHTML = yourLocation;
 							}
 
