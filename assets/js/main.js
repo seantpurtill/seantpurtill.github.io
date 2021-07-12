@@ -6,7 +6,7 @@
 
 (function($) {
 
-	alert('Oh, hi Mark');
+	alert('Oh, hi Mark - main start');
 
 	skel.breakpoints({
 		wide: '(min-width: 961px) and (max-width: 1880px)',
@@ -17,7 +17,7 @@
 	});
 
 	$(function() {
-
+		alert('Oh, Hi Mark- main');
 		var	$window = $(window),
 			$body = $('body');
 
@@ -97,7 +97,7 @@
 					'</div>'
 				)
 					.appendTo($body);
-
+					alert('Oh, Hi Mark- util'); debugger;
 			// Header.
 				$('#header')
 					.panel({
