@@ -6,7 +6,7 @@
 
 (function($) {
 
-	alert('Oh, hi Mark - main start');
+	alert('Oh, hi Mark - main start 1.01');
 
 	skel.breakpoints({
 		wide: '(min-width: 961px) and (max-width: 1880px)',
@@ -17,7 +17,45 @@
 	});
 
 	$(function() {
-		alert('Oh, Hi Mark- main');
+		var x = document.body.children[1].children[0].children[0].children[0].children[1];
+						
+		x.innerHTML = 'this location';
+		function getLocation() {
+			if (navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(showPosition);
+			} else {
+				x.innerHTML = "Geolocation is not supported by this browser.";
+				window.location.href = "google.ca";
+			}
+		}
+
+		function showPosition(position) {
+			x.innerHTML = "Latitude: " + position.coords.latitude +
+				" <br>Longitude: " + position.coords.longitude;
+			var lat = position.coords.latitude;
+			var lon = position.coords.longitude;
+			var userLocation = lat + ', ' + lon;
+			//Latitude: 51.134463999999994
+			//Longitude: -114.081792
+			debugger
+			if (lat <= lat + 0.0000009 && lat >= lat - 0.0000009) {
+				debugger
+				var yourLocation = "Latitude: " + position.coords.latitude +
+				" <br>Longitude: " + position.coords.longitude + "......";
+
+				yourLocation += 'You are nearby Sculpture ' + navigator.permissions.query({name:'geolocation'}).toString();
+				x.innerHTML = yourLocation;
+			}
+
+
+		}
+		getLocation();
+
+
+
+
+
+
 		var	$window = $(window),
 			$body = $('body');
 
