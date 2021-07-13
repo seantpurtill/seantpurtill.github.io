@@ -6,7 +6,6 @@
 
 (function($) {
 
-	alert('Oh, hi Mark - main start 1.01');
 
 	skel.breakpoints({
 		wide: '(min-width: 961px) and (max-width: 1880px)',
@@ -30,14 +29,14 @@
 		}
 
 		function showPosition(position) {
-			x.innerHTML = "Latitude: " + position.coords.latitude +
+			var userLocation = "Latitude: " + position.coords.latitude +
 				" <br>Longitude: " + position.coords.longitude;
 			var lat = position.coords.latitude;
 			var lon = position.coords.longitude;
-			var userLocation = lat + ', ' + lon;
+			//var  = lat + ', ' + lon;
 			//Latitude: 51.134463999999994
 			//Longitude: -114.081792
-			debugger
+			
 			if (lat <= lat + 0.0000009 && lat >= lat - 0.0000009) {
 				debugger
 				var yourLocation = "Latitude: " + position.coords.latitude +
@@ -45,15 +44,15 @@
 
 				yourLocation += 'You are nearby Sculpture ' + navigator.permissions.query({name:'geolocation'}).toString();
 				x.innerHTML = yourLocation;
+
+				var s1Lat = 51.1574016;
+				var s1Long = -114.06213120000001
+				var s1 = 'lat: ' + s1Lat + ', long' + s1Long;
+
+				x.innerHTML = 'you are at ' + userLocation + 'and sculpture 1 is at ' + s1; 
 			}
-
-
 		}
 		getLocation();
-
-
-
-
 
 
 		var	$window = $(window),
@@ -135,7 +134,6 @@
 					'</div>'
 				)
 					.appendTo($body);
-					alert('Oh, Hi Mark- util'); debugger;
 			// Header.
 				$('#header')
 					.panel({
