@@ -17,7 +17,10 @@
 
 	$(function() {
 		var x = document.body.children[1].children[0].children[0].children[0].children[1];
-		//var x = $('location');
+		debugger;
+		var sculptureLocation = document.body.children[1].children[0].children[0].children[0].children[2];
+		var differenceInLat = document.body.children[1].children[0].children[0].children[0].children[3];
+		var differenceInLong = document.body.children[1].children[0].children[0].children[0].children[4];
 		
 		getLocation();
 
@@ -46,7 +49,7 @@
 			//Latitude: 51.134463999999994
 			//Longitude: -114.081792
 			x.innerHTML = userLocation;
-			if (lat <= lat + 0.0000009 && lon >= lon - 0.0000009) {
+			if (lat <= lat + 0.0000009 && lat >= lat - 0.0000009) {
 				debugger
 				var yourLocation = "Latitude: " + position.coords.latitude +
 				" <br>Longitude: " + position.coords.longitude + "......";
@@ -59,10 +62,11 @@
 				var s1 = 'lat: ' + s1Lat + ', long' + s1Long;
 
 				x.innerHTML = 'you are at ' + userLocation + 'and sculpture 1 is at ' + s1; 
+			} else
+			{
+				
 			}
 
-			x.innerHTML = 'outside locations';
-			x.innerHTML -= 'still correct location' + userLocation;
 		}
 
 
