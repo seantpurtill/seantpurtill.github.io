@@ -17,10 +17,13 @@
 
 	$(function() {
 		var x = document.body.children[1].children[0].children[0].children[0].children[1];
-						
-		x.innerHTML = 'this location';
+		
+		
+		getLocation();
+
 		function getLocation() {
 			if (navigator.geolocation) {
+				x.innerHTML = 'geolocation';
 				navigator.geolocation.getCurrentPosition(showPosition);
 			} else {
 				x.innerHTML = "Geolocation is not supported by this browser.";
@@ -29,6 +32,8 @@
 		}
 
 		function showPosition(position) {
+			x.innerHTML = 'showPosition';
+
 			var userLocation = "Latitude: " + position.coords.latitude +
 				" <br>Longitude: " + position.coords.longitude;
 			var lat = position.coords.latitude;
@@ -52,7 +57,6 @@
 				x.innerHTML = 'you are at ' + userLocation + 'and sculpture 1 is at ' + s1; 
 			}
 		}
-		getLocation();
 
 
 		var	$window = $(window),
