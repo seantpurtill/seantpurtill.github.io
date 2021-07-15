@@ -32,8 +32,7 @@
 		}
 
 		function showPosition(position) {
-			x.innerHTML = 'showPosition';
-
+			
 			var userLocation = "Latitude: " + position.coords.latitude +
 				" <br>Longitude: " + position.coords.longitude;
 			var lat = position.coords.latitude;
@@ -61,6 +60,9 @@
 
 				x.innerHTML = 'you are at ' + userLocation + 'and sculpture 1 is at ' + s1; 
 			}
+
+			x.innerHTML = 'outside locations';
+			x.innerHTML -= 'still correct location' + userLocation;
 		}
 
 
