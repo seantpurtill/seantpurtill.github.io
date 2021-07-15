@@ -38,11 +38,16 @@
 				" <br>Longitude: " + position.coords.longitude;
 			var lat = position.coords.latitude;
 			var lon = position.coords.longitude;
-			//var  = lat + ', ' + lon;
+			
+			if(userLocation === null || undefined) 
+			{
+				x.innerHTML = "userlocation is null";
+			}
+
 			//Latitude: 51.134463999999994
 			//Longitude: -114.081792
 			x.innerHTML = userLocation;
-			if (lat <= lat + 0.0000009 && lat >= lat - 0.0000009) {
+			if (lat <= lat + 0.0000009 && lon >= lon - 0.0000009) {
 				debugger
 				var yourLocation = "Latitude: " + position.coords.latitude +
 				" <br>Longitude: " + position.coords.longitude + "......";
