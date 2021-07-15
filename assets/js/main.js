@@ -16,8 +16,8 @@
 	});
 
 	$(function() {
-		//var x = document.body.children[1].children[0].children[0].children[0].children[1];
-		var x = $('location');
+		var x = document.body.children[1].children[0].children[0].children[0].children[1];
+		//var x = $('location');
 		
 		getLocation();
 
