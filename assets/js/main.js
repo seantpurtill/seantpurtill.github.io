@@ -16,8 +16,8 @@
 	});
 
 	$(function() {
-		var x = document.body.children[1].children[0].children[0].children[0].children[1];
-		
+		//var x = document.body.children[1].children[0].children[0].children[0].children[1];
+		var x = $('location');
 		
 		getLocation();
 
@@ -41,7 +41,7 @@
 			//var  = lat + ', ' + lon;
 			//Latitude: 51.134463999999994
 			//Longitude: -114.081792
-			
+			x.innerHTML = userLocation;
 			if (lat <= lat + 0.0000009 && lat >= lat - 0.0000009) {
 				debugger
 				var yourLocation = "Latitude: " + position.coords.latitude +
